@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+header{
+    max-width: 1440px;
+    margin: 50px;
+    width: 1440px;
+    margin-left: 12.5%;
+}
+header .prawo{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+header .prawo li{
+    padding-left: 20px;
+    list-style-type: none;
+}
+main .gora{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    width: 1440px;
+    margin-left: 12.5%;
+}
+main .gora .lewo{
+    width: 50%;   
+}
+main .gora .lewo input{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+main .gora .lewo button{
+    width: 100px;
+    background-color: hsl(224, 93%, 58%);   
+    color: white;
+    padding: 5px;
+}
+main .gora .prawo img{
+    width: 90%;
+    float: right;
+}
+.curve{
+    margin-top: 100px;
+    margin-bottom: -10px;
+    width: 100%;
+}
+main .dol{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(240, 75%, 98%);
+    padding: 50px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    margin-top: 0;
+    max-width: 1440px;
+}
+main .dol .lewo{
+    width: 60%;
+}
+.br{
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: underline;
+    color: hsl(170, 45%, 43%);
+}
+.kyle{
+    width: 50%;
+    margin-top: 50px;
+    padding: 25px;
+    outline: 2px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 5px;
+    background-color: white;
+}
+.kyle img{
+    margin-bottom: 10px;
+}
+.kyle .gostek{
+    display: flex;
+}
+.kyle div img{
+    width: 15%;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.kyle .gostek div{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.kyle .gostek div div{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 75%;
+}
+main .dol .prawo img{
+    width: 90%;
+    float: right;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(238, 22%, 44%);
+    padding: 50px;
+    margin-top: 0;
+    max-width: 1440px;
+    color: white;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+article .lewo{
+    width: 35%;
+}
+article .prawo{
+    width: 50%;
+    float: right;
+}
+article .prawo input{
+    width: 100%;
+    padding: 10px;
+}
+article .prawo button{
+    margin-top: 10px;
+    width: 200px;
+    background-color: hsl(224, 93%, 58%);   
+    color: white;
+    padding: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(243, 87%, 12%);
+    padding: 50px;
+    margin-top: 0;
+    max-width: 1440px;
+    color: white;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+footer .box div img{
+    margin-right: 10px;
+}
+footer li{
+    list-style-type: none;
+}
+@media (max-width: 375px) {
+    *{
+        width: 92%;
+        font-size: 8px;
+    }
+    header{
+        width: 100%;
+    }
+    header .prawo li{
+        margin-top: -20px;
+    }
+    main .gora{
+        width: 100%;
+    }
+    .curve{
+        width: 375px;
+    }
+    main .dol{
+        width: 103%;
+    }
+    img{
+        width: 10%;
+    }
+    .kyle{
+        width: 100%;
+    }
+    article .prawo button{
+        width: 50%;
+    }
+    h1{
+        line-height: normal;
+    }
+}
