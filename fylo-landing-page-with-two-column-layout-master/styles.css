@@ -19,20 +19,23 @@ header{
     width: 1440px;
     margin-left: 12.5%;
 }
-header .prawo{
-    float: right;
-    display: flex;
-    flex-direction: row;
+header .prawo img{
+    float: left;
 }
 header .prawo li{
     padding-left: 20px;
     list-style-type: none;
 }
+.dzialaj{
+    float: right;
+}
 main .gora{
     display: flex;
     justify-content: space-between;
     margin: 50px;
+    margin-top: 100px;
     width: 1440px;
+    float: left;
     margin-left: 12.5%;
 }
 main .gora .lewo{
@@ -158,35 +161,93 @@ footer li{
     list-style-type: none;
 }
 @media (max-width: 375px) {
-    *{
-        width: 92%;
-        font-size: 8px;
-    }
-    header{
-        width: 100%;
-    }
-    header .prawo li{
-        margin-top: -20px;
-    }
-    main .gora{
-        width: 100%;
-    }
-    .curve{
+    body{
         width: 375px;
-    }
-    main .dol{
-        width: 103%;
-    }
-    img{
-        width: 10%;
-    }
-    .kyle{
-        width: 100%;
-    }
-    article .prawo button{
-        width: 50%;
+        max-width: 375px;
     }
     h1{
         line-height: normal;
+    }
+    header{
+        display: flex;
+        margin: 1px;
+        margin-left: -15px;
+        width: 375px;
+    }
+    header img{
+        width: 25%;
+    }
+    .dzialaj{
+        float: left;
+    }
+    main .gora{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 5%;
+        margin-right: 0%;
+        margin-top: 50px;
+        max-width: 350px;
+    }
+    main .gora .prawo img {
+        float: left;
+        width: 100%;
+    }
+    main .gora .lewo{
+        width: 100%;
+        text-align: center;
+    }
+    main .gora .lewo input{
+        width: 325px;
+    }
+    main .gora .lewo button{
+        width: 335px;
+        margin-left: -10px;
+    }
+    main .dol{
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 350px;
+    }
+    main .dol .lewo{
+        width:  100%;
+    }
+    main .dol .lewo .kyle{
+        width: 85%;
+        text-align: left;
+    }
+    article{
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 5%;
+    }
+    article .lewo{
+        width: 100%;
+    }
+    article .prawo{
+        width: 100%;
+    }
+    article .prawo input{
+        width: 92.5%;
+    }
+    article .prawo button{
+        width: 100%;
+    }
+    footer{
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    footer li{
+        padding-bottom: 10px;
+    }
+    footer .box div img{
+        padding-left: 40px;
     }
 }
